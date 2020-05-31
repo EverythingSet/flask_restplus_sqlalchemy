@@ -105,7 +105,7 @@ import logging
 
 from http import HTTPStatus
 from flask import request
-from flask_restplus import Resource
+from flask_restx import Resource
 from ..restplus import api, name_space
 from ..swagger import api_model_factory
 
@@ -180,7 +180,7 @@ In above example this is where api and error handling logic is located
 """
 import logging
 
-from flask_restplus import Api, Namespace
+from flask_restx import Api, Namespace
 from sqlalchemy.orm.exc import NoResultFound
 from .. import __version__
 log = logging.getLogger(__name__)
